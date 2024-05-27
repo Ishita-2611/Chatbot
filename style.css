@@ -1,0 +1,347 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+main{
+    background: linear-gradient(to bottom , rgb(1, 1, 39),70%, rgb(10, 120, 170));
+    height:100%;
+    margin: 0;
+}
+.top{
+    background: linear-gradient(to bottom , rgb(1, 1, 39),70%, rgb(12, 12, 134));
+    height:100%;
+    margin: 0;
+
+    display:flex;
+}
+
+.arrow-right{
+    margin-right:0.5vw;
+    color:white;
+    font-size:30px;
+    background: none;
+    position:static;
+   
+}
+
+.arrow-left{
+    margin-left:0.5vw;
+    font-size:30px;
+    color: white;
+    background: none;
+    position:static;
+   
+    
+}
+.volume{
+    margin-left:93.5vw;
+    font-size:30px;
+    color: white;
+    background: none;
+    position:static;
+   
+   
+
+}
+.arrow-left:hover,
+.arrow-right:hover,
+.volume:hover{
+    border-radius:50%;
+    color:rgb(15, 16, 47);
+    background-color: rgb(233, 233, 234);
+    height:30px;
+    
+    
+}
+/* Large devices (desktops, 1200px and up) */
+@media (max-width: 1200px) {
+    .arrow-right,
+    .arrow-left,
+    .volume {
+        font-size: 20px; /* Smaller font size for large screens */
+    }
+    .volume {
+        margin-left: 93vw; /* Adjust margin to fit smaller font size */
+    }
+}
+
+/* Medium devices (tablets, 992px and up) */
+@media (max-width: 992px) {
+    .arrow-right,
+    .arrow-left,
+    .volume {
+        font-size: 18px; /* Smaller font size for medium screens */
+    }
+    .volume {
+        margin-left: 92vw; /* Adjust margin to fit smaller font size */
+    }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    .arrow-right,
+    .arrow-left,
+    .volume {
+        font-size: 16px; /* Smaller font size for tablets */
+    }
+    .volume {
+        margin-left: 90vw; /* Adjust margin to fit smaller font size */
+    }
+}
+
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 576px) {
+    .arrow-right,
+    .arrow-left,
+    .volume {
+        font-size: 14px; /* Smaller font size for small devices */
+    }
+    .volume {
+        margin-left: 88vw; /* Adjust margin to fit smaller font size */
+    }
+}
+.image{
+    display: flex;
+    border-radius:50%;
+    align-items: center;
+    height:110vh;
+    margin: 10px 0; 
+    margin-left: 10vw;
+    background:none;
+
+}
+.section1{
+    display:flex;
+    padding: 10px 0; /* Adjust padding as needed */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* height: calc(100% - 100px); */
+ }
+.content {
+    display: flex;
+    font-size: 5em;
+    color: white;
+    margin: 20px 0; 
+    
+    text-align:center;
+}
+.content_img{
+    margin-top:0;
+    display: flex;
+    column-gap:10px;
+    align-items:center;
+}  
+
+@keyframes zoom-in {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+.image img {
+    transition: transform 0.4s; /* Smooth transition for transform property */
+}
+
+.image:hover img {
+    transform: scale(1.2); /* Scale the image on hover */
+}
+.but{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.button1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.5rem;
+    height:100px;
+    width:300px;
+    font-size:30px;
+    background-color:rgb(13, 13, 58);
+    color:azure;
+    font-weight: bolder;
+    padding: 15px 32px;
+    cursor: pointer;
+    border: 5px solid rgb(28, 169, 245);
+    transition:0.3s;
+}
+
+.button1:hover {
+    background-color: rgb(66, 66, 246);
+    border: 5px solid rgb(17, 7, 54);
+
+}
+@media (max-width: 576px) {
+    .image {
+        height: 80vh; /* Adjust height for small devices */
+        margin-left: 5vw; /* Adjust margin for small devices */
+    }
+
+    .button1 {
+        width: 200px; /* Adjust button width for small devices */
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .image {
+        height: 80vh; /* Adjust height for small devices */
+        margin-left: 5vw; /* Adjust margin for small devices */
+    }
+    .content {
+        font-size: 4em; /* Adjust font size for medium devices */
+    }
+
+    .button1 {
+        width: 250px; /* Adjust button width for medium devices */
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .image {
+        height: 80vh; /* Adjust height for small devices */
+        margin-left: 5vw; /* Adjust margin for small devices */
+    }
+    .section1 {
+        padding: 20px 0; /* Adjust padding for large devices */
+    }
+
+    .button1 {
+        height: 80px; /* Adjust button height for large devices */
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .image {
+        height: 80vh; /* Adjust height for small devices */
+        margin-left: 5vw; /* Adjust margin for small devices */
+    }
+    .section1 {
+        justify-content: center; /* Center content for extra large devices */
+    }
+}
+.type{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:1.5rem;
+    border:1px solid rgb(255, 255, 255);
+    height:50px;
+    width:500px;
+    /* margin-bottom:20px; */
+    font-size:25px;
+    background-color:rgb(13, 13, 58);
+    color:rgb(255, 255, 255);
+    cursor:text;
+
+    
+}
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:68px;
+    width:600px;
+    background-color:rgb(13, 13, 58);
+    color:rgb(255, 255, 255);
+    border:3px solid rgb(28, 169, 245);
+    border-radius:1.5rem;
+    margin-left:550px;
+
+}
+.section2{
+    padding-top:0;
+    padding-bottom:50px;
+}
+/* Media queries */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    .type {
+        width: 90%; /* Adjust width for small devices */
+        font-size: 20px; /* Adjust font size for small devices */
+    }
+
+    .footer {
+        width: 90%; /* Adjust width for small devices */
+        margin-left: auto; /* Center align for small devices */
+        margin-right: auto; /* Center align for small devices */
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .type {
+        width: 70%; /* Adjust width for medium devices */
+        font-size: 22px; /* Adjust font size for medium devices */
+    }
+
+    .footer {
+        width: 70%; /* Adjust width for medium devices */
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .type {
+        width: 60%; /* Adjust width for large devices */
+        font-size: 23px; /* Adjust font size for large devices */
+    }
+
+    .footer {
+        width: 60%; /* Adjust width for large devices */
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    /* No specific adjustments needed for extra large devices */
+}
+footer{
+    display:flex;
+    padding-top:30px;
+    background: linear-gradient(to bottom , rgb(1, 1, 39),70%, rgb(12, 12, 134));
+    height:80px;
+    text-align: center;
+    font-size:40px;
+    color:white;
+    font-weight: bold;
+    align-items: center;
+    justify-content:center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+@media (max-width: 576px) {
+    footer {
+        font-size: 30px; /* Adjust font size for small devices */
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    footer {
+        font-size: 35px; /* Adjust font size for medium devices */
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* No specific adjustments needed for large devices */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    /* No specific adjustments needed for extra large devices */
+}
+
+
