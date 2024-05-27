@@ -11,8 +11,8 @@ main{
     margin: 0;
 }
 .top{
-    background: linear-gradient(to bottom , rgb(1, 1, 39),70%, rgb(12, 12, 134));
-    height:100%;
+    /* background: linear-gradient(to bottom , rgb(1, 1, 39),70%, rgb(12, 12, 134));
+    height:100%; */
     margin: 0;
 
     display:flex;
@@ -37,7 +37,7 @@ main{
     
 }
 .volume{
-    margin-left:93.5vw;
+    margin-left:92.2vw;
     font-size:30px;
     color: white;
     background: none;
@@ -230,6 +230,9 @@ main{
         justify-content: center; /* Center content for extra large devices */
     }
 }
+.footer i{
+    font-size:34px;
+}
 .type{
     display:flex;
     align-items: center;
@@ -262,6 +265,35 @@ main{
 .section2{
     padding-top:0;
     padding-bottom:50px;
+}
+.footer i {
+    font-size: 34px;
+}
+
+/* Media queries */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    .footer i {
+        font-size: 28px; /* Adjust font size for small devices */
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .footer i {
+        font-size: 30px; /* Adjust font size for medium devices */
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* No specific adjustments needed for large devices */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    /* No specific adjustments needed for extra large devices */
 }
 /* Media queries */
 
@@ -310,7 +342,7 @@ main{
 footer{
     display:flex;
     padding-top:30px;
-    background: linear-gradient(to bottom , rgb(1, 1, 39),70%, rgb(12, 12, 134));
+    /* background: linear-gradient(to bottom , rgb(1, 1, 39),70%, rgb(12, 12, 134)); */
     height:80px;
     text-align: center;
     font-size:40px;
@@ -321,6 +353,22 @@ footer{
     padding-top: 20px;
     padding-bottom: 20px;
 }
+a{
+    color:rgb(16, 16, 61);
+    text-decoration:none;
+    cursor:pointer;
+
+}
+a:hover{
+    color:rgb(255, 255, 255);
+    transition:0.2s;
+}
+a::after{
+    color:rgb(3, 3, 3);
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
     footer {
         font-size: 30px; /* Adjust font size for small devices */
@@ -343,5 +391,3 @@ footer{
 @media (min-width: 1200px) {
     /* No specific adjustments needed for extra large devices */
 }
-
-
